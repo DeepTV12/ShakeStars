@@ -158,7 +158,7 @@ def main():
         # Get user details
         user_details = get_user_details(query_id)
         if user_details:
-            console.print(watermark(f"User: {user_details['username']}, Level: {user_details['level']}, TON: {user_details['tonAmount']}"))
+            console.print(watermark(f"User: {user_details['username']}, Level: {user_details['level']}"))
             
             energy = user_details.get('energy')  # Safely get energy, returns None if key doesn't exist
             if energy is not None :
